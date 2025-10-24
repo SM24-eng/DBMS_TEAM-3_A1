@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vehicle Rental Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Vehicle Rental Management System</h1>
+
+    <!-- Add Customer -->
+    <h2>Add Customer</h2>
+    <input type="text" id="customerName" placeholder="Name">
+    <input type="text" id="customerContact" placeholder="Contact">
+    <button onclick="addCustomer()">Add Customer</button>
+
+    <h3>Customers List</h3>
+    <table id="customersTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Contact</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <!-- Vehicles -->
+    <h2>Vehicles</h2>
+    <table id="vehiclesTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Rent/Day (₹)</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <!-- Booking -->
+    <h2>Book Vehicle</h2>
+    <select id="vehicleId"></select>
+    <select id="customerId"></select
